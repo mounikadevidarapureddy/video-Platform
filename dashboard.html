@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>FLIXIT Dashboard</title>
+
+<link rel="stylesheet" href="dashboard.css">
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+</head>
+<body>
+
+<header class="navbar">
+
+    <div class="logo">
+        FLIXIT
+    </div>
+
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">Playlist</a>
+        <a href="#">History</a>
+        <a href="#">Upload</a>
+        <a href="#">Download</a>
+    </nav>
+
+    <div class="profile-container">
+
+        <div class="profile-icon" id="profileBtn">
+            <i class="fa-solid fa-user"></i>
+        </div>
+
+       <div class="profile-dropdown" id="profileMenu">
+
+    <div class="user-info">
+
+        <h3 id="profileName">User Name</h3>
+
+        <p id="profileUsername">@username</p>
+
+        <span id="profileEmail">
+            user@gmail.com
+        </span>
+
+    </div>
+
+    <hr>
+<!-- <hr> -->
+    <a href="#">
+        ⚙ Settings
+    </a>
+
+    <a href="#" onclick="logout()">
+        🚪 Logout
+    </a>
+
+</div>
+
+    </div>
+
+</header>
+
+<!-- SEARCH BAR -->
+
+<div class="search-container">
+
+    <div class="search-box">
+
+        <i class="fa-solid fa-magnifying-glass"></i>
+
+        <input
+        type="text"
+        placeholder="Search Movies">
+
+    </div>
+
+</div>
+
+<main>
+    <div class="profile-modal" id="profileModal">
+
+    <div class="profile-box">
+
+        <h2>User Profile</h2>
+
+        <div class="profile-details">
+
+            <p>
+                <strong>Name:</strong>
+                <span id="profileName"></span>
+            </p>
+
+            <p>
+                <strong>Username:</strong>
+                <span id="profileUsername"></span>
+            </p>
+
+            <p>
+                <strong>Email:</strong>
+                <span id="profileEmail"></span>
+            </p>
+
+        </div>
+
+        <button id="closeProfile">
+            Close
+        </button>
+
+    </div>
+
+</div>
+
+<section>
+
+<h2>🔥 Continue Watching</h2>
+
+<div class="movies">
+
+    <div class="card">
+        <div class="poster"></div>
+        <p>Avengers</p>
+    </div>
+
+    <div class="card">
+        <div class="poster"></div>
+        <p>Batman</p>
+    </div>
+
+    <div class="card">
+        <div class="poster"></div>
+        <p>Avatar</p>
+    </div>
+
+</div>
+
+</section>
+
+<section>
+
+<h2>🔥 Trending Movies</h2>
+
+<div class="movies">
+
+    <div class="card">
+        <div class="poster"></div>
+        <p>Joker</p>
+    </div>
+
+    <div class="card">
+        <div class="poster"></div>
+        <p>Spider-Man</p>
+    </div>
+
+    <div class="card">
+        <div class="poster"></div>
+        <p>Iron Man</p>
+    </div>
+
+    <div class="card">
+        <div class="poster"></div>
+        <p>Interstellar</p>
+    </div>
+
+</div>
+
+</section>
+
+<section>
+
+<h2>🔥 Recently Added</h2>
+
+<div class="movies">
+
+    <div class="card">
+        <div class="poster"></div>
+        <p>Movie 1</p>
+    </div>
+
+    <div class="card">
+        <div class="poster"></div>
+        <p>Movie 2</p>
+    </div>
+
+    <div class="card">
+        <div class="poster"></div>
+        <p>Movie 3</p>
+    </div>
+
+    <div class="card">
+        <div class="poster"></div>
+        <p>Movie 4</p>
+    </div>
+
+</div>
+
+</section>
+
+</main>
+
+<script src="dashboard.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,339 @@
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Poppins,sans-serif;
+}
+
+body{
+
+background:#070b18;
+color:white;
+
+min-height:100vh;
+}
+
+.navbar{
+
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:25px 70px;
+background:#0f172a;
+position:sticky;
+top:0;
+z-index:100;
+}
+
+.logo{
+
+font-size:40px;
+font-weight:700;
+color:#00d9ff;
+letter-spacing: 2px;
+}
+
+nav{
+
+display:flex;
+gap:30px;
+}
+
+nav a{
+
+color:white;
+text-decoration:none;
+font-size: 20px;
+font-weight:600;
+padding:10px 15px;
+}
+
+.right-section{
+
+display:flex;
+align-items:center;
+gap:20px;
+}
+
+.search-box{
+
+display:flex;
+align-items:center;
+
+background:#111827;
+
+padding:12px 20px;
+
+border-radius:30px;
+}
+
+.search-box input{
+
+background:none;
+border:none;
+outline:none;
+
+color:white;
+
+margin-left:10px;
+}
+
+.profile{
+
+width:60px;
+height:60px;
+font-size:22px;
+border-radius:50%;
+background:#00d9ff;
+display:flex;
+justify-content:center;
+align-items:center;
+color:black;
+cursor:pointer;
+}
+
+main{
+
+padding:40px 60px;
+}
+
+section{
+
+margin-bottom:50px;
+}
+
+section h2{
+
+margin-bottom:20px;
+}
+
+.movies{
+
+display:flex;
+gap:25px;
+flex-wrap:wrap;
+}
+
+.card{
+
+width:320px;
+
+background:#111827;
+
+padding:12px;
+
+border-radius:18px;
+
+transition:.3s;
+
+cursor:pointer;
+}
+
+.card:hover{
+
+transform:translateY(-10px);
+}
+
+.poster{
+
+height:180px;
+
+background:linear-gradient(
+45deg,
+#00d9ff,
+#0066ff
+);
+
+border-radius:15px;
+
+margin-bottom:15px;
+}
+
+.card p{
+
+text-align:center;
+font-size:18px;
+}
+
+@media(max-width:900px){
+
+.navbar{
+
+flex-direction:column;
+gap:20px;
+}
+
+main{
+
+padding:30px;
+}
+
+.card{
+
+width:180px;
+}
+}
+.search-container{
+
+display:flex;
+justify-content:center;
+
+margin-top:30px;
+margin-bottom:40px;
+}
+
+.search-box{
+
+width:700px;
+height:60px;
+
+display:flex;
+align-items:center;
+
+background:#111827;
+
+border-radius:40px;
+
+padding:0 25px;
+
+border:1px solid rgba(255,255,255,.1);
+}
+
+.search-box i{
+
+font-size:20px;
+color:#00d9ff;
+}
+
+.search-box input{
+
+width:100%;
+height:100%;
+
+margin-left:15px;
+
+background:none;
+border:none;
+outline:none;
+
+color:white;
+
+font-size:18px;
+}
+.profile-container{
+    position:relative;
+}
+
+.profile-icon{
+    width:60px;
+    height:60px;
+    border-radius:50%;
+    background:#00d9ff;
+    color:black;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    font-size:22px;
+    cursor:pointer;
+}
+
+.profile-dropdown{
+    position:absolute;
+    top:75px;
+    right:0;
+    width:500px;
+    height:400px;
+    background:#111827;
+    border-radius:15px;
+    padding:20px;
+    display:none;
+    box-shadow:0 0 20px rgba(0,217,255,.25);
+}
+
+.profile-dropdown.active{
+    display:block;
+}
+
+.profile-dropdown a{
+    display:block;
+    color:white;
+    text-decoration:none;
+    padding:12px 0;
+    font-size:30px;
+}
+
+.profile-dropdown a:hover{
+    color:#00d9ff;
+}
+
+.profile-modal{
+    position:fixed;
+    inset:0;
+    background:rgba(0,0,0,.7);
+    display:none;
+    justify-content:center;
+    align-items:center;
+    z-index:1000;
+}
+
+.profile-modal.show{
+    display:flex;
+}
+
+.profile-box{
+    width:420px;
+    background:#111827;
+    padding:30px;
+    border-radius:20px;
+}
+
+.profile-box h2{
+    text-align:center;
+    color:#00d9ff;
+    margin-bottom:25px;
+}
+
+.profile-details p{
+    margin:15px 0;
+    font-size:20px;
+}
+
+.profile-box button{
+    width:100%;
+    margin-top:20px;
+    padding:12px;
+    border:none;
+    border-radius:10px;
+    background:#00d9ff;
+    color:black;
+    font-weight:700;
+    cursor:pointer;
+}
+.user-info{
+    padding-bottom:20px;
+}
+
+.user-info h3{
+    font-size:25px;
+    color:#00d9ff;
+    margin-bottom:10px;
+}
+
+.user-info p{
+    font-size:30px;
+    color:white;
+    margin-bottom:10px;
+}
+
+.user-info span{
+    font-size:25px;
+    color:#bdbdbd;
+    word-break:break-word;
+}
+
+.profile-dropdown hr{
+    border:none;
+    border-top:1px solid rgba(255,255,255,.15);
+    margin:12px 12px;
+    
+}

@@ -1,0 +1,197 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+    min-height:100vh;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    background:
+    linear-gradient(
+        rgba(5,5,25,.75),
+        rgba(5,5,25,.85)
+    ),
+    url("assets/bg.jpg");
+
+    background-size:cover;
+    background-position:center;
+    padding:40px;
+}
+
+.container{
+    width:100%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.card{
+
+    width:700px;
+
+    padding:60px;
+
+    background:rgba(255,255,255,.08);
+
+    border:1px solid rgba(255,255,255,.15);
+
+    backdrop-filter:blur(20px);
+
+    border-radius:35px;
+
+    box-shadow:
+    0 0 25px rgba(0,255,255,.25),
+    0 0 60px rgba(0,255,255,.08);
+
+    color:white;
+}
+
+.card h1{
+    text-align:center;
+    font-size:70px;
+    font-weight:700;
+    letter-spacing:2px;
+}
+
+.subtitle{
+    text-align:center;
+    margin-top:15px;
+    margin-bottom:40px;
+
+    color:#00d9ff;
+
+    font-size:18px;
+    letter-spacing:2px;
+}
+
+input{
+
+    width:100%;
+
+    padding:22px 24px;
+
+    margin-bottom:25px;
+
+    border:none;
+
+    border-radius:16px;
+
+    background:rgba(255,255,255,.08);
+
+    color:white;
+
+    font-size:17px;
+
+    outline:none;
+}
+
+input::placeholder{
+    color:#cfcfcf;
+}
+
+button{
+
+    width:100%;
+
+    padding:22px;
+
+    margin-top:10px;
+
+    border:none;
+
+    border-radius:16px;
+
+    background:
+    linear-gradient(
+        90deg,
+        #00d9ff,
+        #0088ff
+    );
+
+    color:white;
+
+    font-size:20px;
+    font-weight:600;
+
+    cursor:pointer;
+
+    transition:.3s;
+}
+
+button:hover{
+
+    transform:translateY(-3px);
+
+    box-shadow:
+    0 0 20px #00d9ff;
+}
+
+.login-link{
+
+    text-align:center;
+
+    margin-top:30px;
+
+    font-size:17px;
+}
+
+.login-link a{
+
+    color:#00d9ff;
+
+    text-decoration:none;
+
+    font-weight:600;
+}
+
+.login-link a:hover{
+    text-decoration:underline;
+}
+
+@media(max-width:768px){
+
+    .card{
+        width:100%;
+        max-width:600px;
+        padding:45px;
+    }
+
+    .card h1{
+        font-size:55px;
+    }
+}
+@media(max-width:600px){
+
+    body{
+        padding:20px;
+    }
+
+    .card{
+        width:100%;
+        padding:30px;
+    }
+
+    .card h1{
+        font-size:42px;
+    }
+
+    .subtitle{
+        font-size:15px;
+    }
+
+    input{
+        padding:18px;
+        font-size:15px;
+    }
+
+    button{
+        padding:18px;
+        font-size:18px;
+    }
+}
